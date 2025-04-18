@@ -1,129 +1,147 @@
-.road { 
-    position: relative; 
-    bottom: 200px; 
+.road {
+  position: relative;
+  bottom: 200px;
 }
 .bus {
-  position: absolute;
-  width: 340px;
-  height: 92px;
-  border-radius: 10px;
-  top: 75px;
-  background-image: url('./assets/bus.png');
-  background-size: cover;
+position: absolute;
+width: 340px;
+height: 92px;
+border-radius: 10px;
+background-image: url('./assets/bus.png');
+background-size: cover;
+}
+
+.bus.left, .bus_left_2, .bus_left_3, .bus_left_4, .bus_left_5 {
+left: -340px;
 }
 
 .bus.left {
-  animation: moveLeft 15s linear infinite;
-  -webkit-animation: moveLeft 15s linear infinite;
-  top: 45px;
-}
-
-.bus.left .frontwheel {
-  position: absolute;
-  width: 32px;
-  animation: rotate 3s linear infinite;
-  -webkit-animation: rotate 3s linear infinite;
-  bottom: 1px;
-  right: 56px;
-}
-
-.bus.left .backwheel {
-  position: absolute;
-  width: 32px;
-  animation: rotate 3s linear infinite;
-  -webkit-animation: rotate 3s linear infinite;
-  bottom: 1px;
-  left: 95px;
+animation: moveLeft 15s linear infinite;
+top: 45px;
 }
 
 .bus_left_2 {
-  animation-delay: 5s !important;
-  left: -500px;
-  -webkit-animation-delay: 5s !important;
+top: 55px;
 }
 
 .bus_left_3 {
-  animation-delay: 10s !important;
-  left: -500px;
-  -webkit-animation-delay: 10s !important;
+top: 65px;
 }
 
 .bus_left_4 {
-  animation-delay: 15s !important;
-  left: -500px;
-  -webkit-animation-delay: 15s !important;
+top: 75px;
 }
 
 .bus_left_5 {
-  animation-delay: 20s !important;
-  left: -500px;
-  -webkit-animation-delay: 20s !important;
+top: 85px;
+}
+
+.bus.left .frontwheel {
+position: absolute;
+width: 32px;
+animation: rotate 3s linear infinite;
+bottom: 1px;
+right: 56px;
+}
+
+.bus.left .backwheel {
+position: absolute;
+width: 32px;
+animation: rotate 3s linear infinite;
+bottom: 1px;
+left: 95px;
+}
+
+.bus_left_2 {
+animation-delay: 5s !important;
+}
+
+.bus_left_3 {
+animation-delay: 10s !important;
+}
+
+.bus_left_4 {
+animation-delay: 15s !important;
+}
+
+.bus_left_5 {
+animation-delay: 20s !important;
 }
 
 @keyframes moveLeft {
-  0% { left: 0; }
-  100% { left: 100%; }
+0% { left: -340px; }
+100% { left: 100vw; }
 }
 
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
 }
 
 @keyframes rotate2 {
-  0% { transform: rotate(360deg); }
-  100% { transform: rotate(0deg); }
+0% { transform: rotate(360deg); }
+100% { transform: rotate(0deg); }
+}
+
+.bus.right, .bus_right_2, .bus_right_3, .bus_right_4, .bus_right_5 {
+right: -340px;
 }
 
 .bus.right {
-  animation: moveRight 15s linear infinite;
-  top: 95px;
-  background-image: url('./assets/bus1.png');
+animation: moveRight 15s linear infinite;
+top: 95px;
+background-image: url('./assets/bus1.png');
 }
 
 .bus_right_2 {
-  animation-delay: 5s !important;
-  right: -500px;
-  -webkit-animation-delay: 5s !important;
+top: 105px;
 }
 
 .bus_right_3 {
-  animation-delay: 10s !important;
-  right: -500px;
-  -webkit-animation-delay: 10s !important;
+top: 115px;
 }
 
 .bus_right_4 {
-  animation-delay: 15s !important;
-  right: -500px;
-  -webkit-animation-delay: 15s !important;
+top: 125px;
 }
 
 .bus_right_5 {
-  animation-delay: 20s !important;
-  right: -500px;
-  -webkit-animation-delay: 20s !important;
+top: 135px;
+}
+
+.bus_right_2 {
+animation-delay: 5s !important;
+}
+
+.bus_right_3 {
+animation-delay: 10s !important;
+}
+
+.bus_right_4 {
+animation-delay: 15s !important;
+}
+
+.bus_right_5 {
+animation-delay: 20s !important;
 }
 
 .bus.right .frontwheel {
-  position: absolute;
-  width: 32px;
-  animation: rotate2 3s linear infinite;
-  -webkit-animation: rotate2 3s linear infinite;
-  bottom: 1px;
-  right: 92px;
+position: absolute;
+width: 32px;
+animation: rotate2 3s linear infinite;
+bottom: 1px;
+right: 92px;
 }
 
 .bus.right .backwheel {
-  position: absolute;
-  width: 32px;
-  animation: rotate2 3s linear infinite;
-  -webkit-animation: rotate2 3s linear infinite;
-  bottom: 1px;
-  left: 58px;
+position: absolute;
+width: 32px;
+animation: rotate2 3s linear infinite;
+bottom: 1px;
+left: 58px;
 }
 
 @keyframes moveRight {
-  0% { right: 0; }
-  100% { right: 100%; }
+0% { right: -340px; }
+100% { right: 100vw; }
 }
